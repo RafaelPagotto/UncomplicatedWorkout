@@ -35,12 +35,12 @@ a header:hover {
 
 h1 {
     font-size: 6rem;
-    margin: 5rem 0 0 0;
+    margin: 5rem 1rem 2rem 1rem;
 }
 
 .description {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0 1rem 2rem 1rem;
+    margin: 0 1rem 0rem 1rem;
 }
 
 h2 {
@@ -49,10 +49,8 @@ h2 {
 }
 
 section p {
-    display: inline-flex;
+    display: block;
     margin: 0.2rem;
-    border: solid 1px white;
-    border-radius: 5px;
     padding: 0.5rem;
     justify-content: center;
     align-items: center;
@@ -69,8 +67,7 @@ section a:hover {
 }
 
 .content {
-    flex: 1; /* This makes the content area take up the remaining space,
-    making the footer stay at the bottom and consequently enabling scrolling if vh is lowered*/
+    flex: 1;
 }
 
 footer {
@@ -87,64 +84,4 @@ footer p {
     margin: 0;
     padding: 0 1rem 0 1rem;
     line-height: 2;
-}
-
-@media screen and (max-width: 1270px) {
-    section p {
-        display: block;
-        margin: 1rem 10vw 0 10vw;
-        border: none;
-        padding: 0;
-    }  
-}
-
-@media screen and (max-width: 460px) {    
-    h1 {
-        font-size: 4.5rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    footer {
-        font-size: 0.6rem;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    h1 {
-        font-size: 3rem;
-    }
-    
-    h2 {
-        font-size: 1rem;
-    }
-
-    .description {
-        font-size: 0.8rem;
-    }
-
-    section p {
-        font-size: 0.8rem;
-    }  
-}
-
-@media screen and (max-width: 260px) {
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 0.8rem;
-    }
-
-    .description {
-        font-size: 0.6rem;
-    }
-
-    section p {
-        font-size: 0.6rem;
-    }  
-    
 }
