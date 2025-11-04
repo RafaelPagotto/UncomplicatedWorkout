@@ -21,6 +21,20 @@ body {
     margin: 0;
 }
 
+header {
+    color: black;
+    background-color: white;
+    padding: 0.5rem 0;
+}
+
+.headerLink {
+    text-decoration: none;
+}
+
+a header:hover {  
+    background-color: orange;
+}
+
 h1 {
     font-size: 6rem;
     margin: 6rem 3rem 1rem 3rem;
