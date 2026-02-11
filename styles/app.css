@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap');
 
 :root {
-  --bg: #f5f1ea;
-  --bg-strong: #efe6d8;
-  --ink: #1b1b1b;
-  --muted: #5f5a55;
-  --accent: #ef6f46;
-  --accent-dark: #d95f3a;
-  --accent-2: #2c7a7b;
-  --card: #ffffff;
-  --stroke: #ded6c9;
-  --shadow: 0 18px 45px rgba(27, 27, 27, 0.12);
+  --bg: #0f1114;
+  --bg-strong: #15181d;
+  --ink: #f8f7f4;
+  --muted: #d4cdc4;
+  --accent: rgb(234, 55, 122);
+  --accent-dark: rgb(205, 45, 105);
+  --accent-contrast: #0b1414;
+  --accent-2: #8e949c;
+  --card: #171b20;
+  --stroke: #343a44;
+  --shadow: 0 8px 24px rgba(5, 6, 8, 0.35);
+}
+
+html {
+  font-size: 106.25%;
 }
 
 * {
@@ -21,10 +26,11 @@ body {
   margin: 0;
   font-family: 'Space Grotesk', system-ui, sans-serif;
   color: var(--ink);
-  background: radial-gradient(circle at 15% 15%, rgba(44, 122, 123, 0.12), transparent 45%),
-    radial-gradient(circle at 85% 20%, rgba(239, 111, 70, 0.18), transparent 40%),
-    linear-gradient(180deg, var(--bg) 0%, #fbf8f2 100%);
+  background: radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.04), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.02), transparent 50%),
+    linear-gradient(180deg, var(--bg) 0%, #0e1013 100%);
   min-height: 100vh;
+  line-height: 1.6;
 }
 
 main {
@@ -55,11 +61,12 @@ header {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
+  color: var(--ink);
 }
 
 .lang-toggle:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--accent-2);
+  color: var(--accent-2);
 }
 
 .hero {
@@ -76,7 +83,7 @@ header {
 .hero-eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.3em;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--accent-2);
   font-weight: 600;
 }
@@ -88,7 +95,7 @@ header {
 }
 
 .hero p {
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   color: var(--muted);
   line-height: 1.6;
   margin: 0 0 1.8rem;
@@ -105,14 +112,15 @@ header {
   padding: 0.85rem 1.8rem;
   border-radius: 999px;
   font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .button.primary {
   background: var(--accent);
-  color: #fff;
-  box-shadow: 0 12px 25px rgba(239, 111, 70, 0.35);
+  color: var(--accent-contrast);
+  box-shadow: 0 8px 18px rgba(5, 6, 8, 0.45);
 }
 
 .button.primary:hover {
@@ -127,8 +135,8 @@ header {
 }
 
 .button.ghost:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--accent-2);
+  color: var(--accent-2);
 }
 
 .hero-card {
@@ -178,25 +186,29 @@ header {
 
 .form-field label {
   font-weight: 600;
+  font-size: 1rem;
 }
 
 select {
   padding: 0.8rem 0.9rem;
   border-radius: 12px;
   border: 1px solid var(--stroke);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-family: inherit;
+  background: var(--card);
+  color: var(--ink);
 }
 
 select:disabled {
-  background: #f4f1ec;
-  color: #9b948d;
+  background: #1a1e24;
+  color: #6f6a64;
 }
 
 .helper {
   margin-top: 1.2rem;
   color: var(--muted);
   line-height: 1.5;
+  font-size: 1rem;
 }
 
 .workout {
@@ -222,7 +234,7 @@ select:disabled {
 }
 
 .day-card {
-  background: #fdfaf5;
+  background: #1a1f26;
   border-radius: 20px;
   padding: 1.5rem;
   border: 1px solid var(--stroke);
@@ -256,7 +268,7 @@ footer {
   padding: 3rem 7vw 4rem;
   color: var(--muted);
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 footer a {
