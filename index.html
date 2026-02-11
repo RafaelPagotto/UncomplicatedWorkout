@@ -1,48 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styleIndex.css">
-    <title>UW - Home</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <title>Uncomplicated Workout</title>
 </head>
 
 <body>
-    <a href="https://www.youtube.com/@UncomplicatedWorkout" target="_blank" rel="noopener noreferrer" class="headerLink"><header>YouTube Channel</header></a>
+    <header>
+        <div class="brand">Uncomplicated Workout</div>
+        <button class="lang-toggle" id="langToggle" type="button">PT-BR</button>
+    </header>
 
-    <div class="lang-switch" style="margin:0.4rem 1rem;">
-      <strong>EN</strong> | <a href="pt-BR/index.html">PT‑BR</a>
-    </div>
+    <noscript>
+        <section class="panel" style="margin: 0 7vw 3rem;">
+            <h2>JavaScript is required</h2>
+            <p>This site builds your workout plan dynamically. Please enable JavaScript to use the planner.</p>
+            <p>If you want help, contact uncomplicatedworkout@gmail.com.</p>
+        </section>
+    </noscript>
 
-    <div class="content">
-        <main>
-            <h1>UNCOMPLICATED WORKOUT</h1>
-            
-            <div class="description">
-                <p>Improve your physical conditioning, hypertrophy and strength with minimal <a href="https://leangains.com/fuckarounditis/" target="_blank" rel="noopener noreferrer">fuckarounditis</a>.</p>
-            </div>
-
-            <section id="programs">
-                <h2>SELECT A PROGRAM</h2>
-                <div class="programType">
-                    <p><a href="fullBody.html">Full Body</a></p>
-                    <p><a href="upperLower.html">Upper Lower</a></p>
-                    <p><a href="pullPushLegs.html">Pull Push Legs</a></p>
+    <main>
+        <section class="hero" id="top">
+            <div class="hero-content">
+                <div class="hero-eyebrow" id="heroEyebrow"></div>
+                <h1 id="heroTitle"></h1>
+                <p id="heroIntro"></p>
+                <div class="hero-actions">
+                    <button class="button primary" id="startButton" type="button"></button>
+                    <button class="button ghost" id="resumeButton" type="button" hidden></button>
                 </div>
-            </section>
-        </main>
-    </div>      
+            </div>
+            <div class="hero-card">
+                <h3 id="cardTitle"></h3>
+                <ul id="cardList"></ul>
+            </div>
+        </section>
+
+        <section class="panel" id="customizer">
+            <h2 id="customizeTitle"></h2>
+            <p id="customizeIntro"></p>
+            <form id="plannerForm">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="splitSelect" id="splitLabel"></label>
+                        <select id="splitSelect">
+                            <option value="fullBody"></option>
+                            <option value="upperLower"></option>
+                            <option value="pullPushLegs"></option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="planSelect" id="planLabel"></label>
+                        <select id="planSelect">
+                            <option value="recommended"></option>
+                            <option value="custom"></option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="volumeSelect" id="volumeLabel"></label>
+                        <select id="volumeSelect">
+                            <option value="high"></option>
+                            <option value="moderate" selected></option>
+                            <option value="low"></option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="frequencySelect" id="frequencyLabel"></label>
+                        <select id="frequencySelect">
+                            <option value="high"></option>
+                            <option value="moderate" selected></option>
+                            <option value="low"></option>
+                        </select>
+                    </div>
+                </div>
+                <p class="helper" id="helperText"></p>
+                <button class="button primary" id="applyButton" type="submit"></button>
+            </form>
+        </section>
+
+        <section class="panel workout" id="workoutOutput">
+            <div class="workout-header">
+                <h2 id="workoutTitle"></h2>
+                <p id="workoutMeta"></p>
+            </div>
+            <div class="workout-days" id="workoutDays"></div>
+        </section>
+    </main>
 
     <footer>
-        <p>Est. 2024 by Rafael Pagotto. All rights reserved.</p>
-        <p>Uncomplicated Workout is created and distributed by Rafael Pagotto, who is not a certified health professional or doctor.</p>
-        <p>The contents of this document should not be taken as medical advice. It is not intended to diagnose, treat, cure, or prevent any health problem - nor is it intended to replace the advice of a physician.</p>
-        <p>By using this site or the content available on it, you confirm that you have read and agree to the terms, notices, and other legal documents contained at <a href="https://drive.google.com/drive/folders/1ht77WsvJMsuKzFdfi4jJnO2iXqIV2juW?usp=drive_link" target="_blank" rel="noopener noreferrer"> this link.</a></p>
-        <p>If you have questions or need support, contact me at this email: uncomplicatedworkout@gmail.com</p>
+        <p data-footer></p>
+        <p data-footer></p>
+        <p data-footer></p>
+        <p>
+            <span id="legalText"></span>
+            <a id="footerLink" href="https://drive.google.com/drive/folders/1ht77WsvJMsuKzFdfi4jJnO2iXqIV2juW?usp=drive_link" target="_blank" rel="noopener noreferrer"></a>.
+        </p>
+        <p data-footer></p>
     </footer>
 
+    <script src="js/app.js"></script>
 </body>
 
 </html>

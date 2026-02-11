@@ -1,12 +1,12 @@
 EN
 
-This project aims to provide simple and straightforward weight training workouts, avoiding eccentric exercises and focusing on the basics that work and deliver results without excess.
+This project provides a single-page workout planner that lets users select a split, volume, and frequency, then renders a customized routine. The interface supports English and PT-BR with a language toggle, and remembers the last plan locally.
 
-The languages used are: HTML and CSS.
+Tech stack: HTML, CSS, and JavaScript.
 
 --------------------------------------
 PTBR
 
-Este projeto objetiva disponibilizar treinos de musculação simples e diretos ao ponto, evitando exercícios excêntricos e focando no básico que funciona e gera resultado sem excesso.
+Este projeto oferece um planejador de treino em pagina unica que permite escolher o split, volume e frequencia, gerando um treino personalizado. A interface suporta ingles e PT-BR com alternador de idioma e salva o ultimo plano localmente.
 
-As linguagens utilizadas são: HTML e CSS.
+Tecnologias utilizadas: HTML, CSS e JavaScript.
