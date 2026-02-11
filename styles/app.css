@@ -8,14 +8,14 @@
   --accent: rgb(234, 55, 122);
   --accent-dark: rgb(205, 45, 105);
   --accent-contrast: #0b1414;
-  --accent-2: #8e949c;
+  --accent-2: #b4b6b8;
   --card: #171b20;
   --stroke: #343a44;
   --shadow: 0 8px 24px rgba(5, 6, 8, 0.35);
 }
 
 html {
-  font-size: 106.25%;
+  font-size: 100%;
 }
 
 * {
@@ -45,12 +45,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 7vw 1rem;
-}
-
-.brand {
-  font-family: 'Fraunces', serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.02em;
 }
 
 .lang-toggle {
@@ -199,11 +193,6 @@ select {
   color: var(--ink);
 }
 
-select:disabled {
-  background: #1a1e24;
-  color: #6f6a64;
-}
-
 .helper {
   margin-top: 1.2rem;
   color: var(--muted);
@@ -215,6 +204,7 @@ select:disabled {
   display: none;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .workout.active {

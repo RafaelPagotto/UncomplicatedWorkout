@@ -7,25 +7,21 @@ const UI_TEXT = {
   en: {
     eyebrow: 'Build a plan that fits real life',
     title: 'Uncomplicated Workout',
-    intro: 'Select your split, choose training variables, and get a plan you can repeat consistently without overthinking.',
+    intro: 'Select your split, choose a volume, and get a consistent plan without overthinking.',
     start: 'Build my plan',
-    resume: 'Resume last plan',
+    clearPlan: 'Clear saved plan',
     cardTitle: 'Recommended for most people',
     cardBullets: [
       'Use the original plan with proven staples.',
-      'Adjust volume and frequency only when you need it.',
-      'Save your last selection for next time.',
+      'Adjust volume only when you need it.',
+      'Remember to apply progressive overload over time.',
     ],
     customizeTitle: 'Customize your plan',
-    customizeIntro: 'Pick a split, then decide whether you want the original recommendation or a custom volume and frequency combination.',
     splitLabel: 'Training split',
-    planLabel: 'Plan',
     volumeLabel: 'Volume',
-    frequencyLabel: 'Frequency',
-    apply: 'Show workout',
-    helper: 'Volume adjusts the number of sets. Frequency controls how many days are shown for the split.',
+    helper: 'Volume changes the number of sets per exercise. Higher volume increases muscle damage and recovery demands; lower volume reduces them.',
     workoutTitle: 'Your workout',
-    workoutMeta: 'Save or adjust any time. Your last plan is stored locally.',
+    workoutMeta: 'Your selection is saved automatically in this browser.',
     footer: [
       'Est. 2024 by Rafael Pagotto. All rights reserved.',
       'Uncomplicated Workout is created and distributed by Rafael Pagotto, who is not a certified health professional or doctor.',
@@ -35,23 +31,15 @@ const UI_TEXT = {
     legalSentence: 'By using this site or the content available on it, you confirm that you have read and agree to the terms, notices, and other legal documents contained at',
     linkLabel: 'legal documents',
     splits: {
+      placeholder: 'Select a split',
       fullBody: 'Full Body',
       upperLower: 'Upper / Lower',
       pullPushLegs: 'Pull / Push / Legs',
     },
-    plans: {
-      recommended: 'Recommended (Original Plan)',
-      custom: 'Custom',
-    },
     volume: {
-      high: 'High',
-      moderate: 'Moderate',
-      low: 'Low',
-    },
-    frequency: {
-      high: 'High',
-      moderate: 'Moderate',
-      low: 'Low',
+      high: 'High (Custom)',
+      moderate: 'Moderate (Recommended)',
+      low: 'Low (Custom)',
     },
     dayNames: {
       monday: 'Monday',
@@ -67,59 +55,47 @@ const UI_TEXT = {
   pt: {
     eyebrow: 'Monte um plano que cabe na sua rotina',
     title: 'Treino Descomplicado',
-    intro: 'Escolha a divisao, defina volume e frequencia, e siga um plano consistente sem complicacao.',
+    intro: 'Escolha a divisão, defina o volume e siga um plano consistente sem complicação.',
     start: 'Montar meu plano',
-    resume: 'Voltar ao ultimo plano',
+    clearPlan: 'Limpar plano salvo',
     cardTitle: 'Recomendado para a maioria',
     cardBullets: [
       'Use o plano original com o essencial que funciona.',
-      'Ajuste volume e frequencia apenas quando necessario.',
-      'Salve sua ultima escolha para a proxima vez.',
+      'Ajuste o volume apenas quando necessário.',
+      'Lembre de aplicar sobrecarga progressiva ao longo do tempo.',
     ],
     customizeTitle: 'Personalize seu plano',
-    customizeIntro: 'Escolha a divisao e depois decida entre a recomendacao original ou um volume e frequencia personalizados.',
-    splitLabel: 'Divisao de treino',
-    planLabel: 'Plano',
+    splitLabel: 'Divisão de treino',
     volumeLabel: 'Volume',
-    frequencyLabel: 'Frequencia',
-    apply: 'Mostrar treino',
-    helper: 'Volume ajusta a quantidade de series. Frequencia controla quantos dias aparecem no split.',
+    helper: 'Volume muda o número de séries por exercício. Volume alto aumenta dano muscular e demanda de recuperação; volume baixo reduz.',
     workoutTitle: 'Seu treino',
-    workoutMeta: 'Salve ou ajuste quando quiser. O ultimo plano fica salvo localmente.',
+    workoutMeta: 'Sua escolha é salva automaticamente neste navegador.',
     footer: [
       'Est. 2024 por Rafael Pagotto. Todos os direitos reservados.',
-      'Uncomplicated Workout foi criado e e distribuido por Rafael Pagotto, que nao e um profissional de saude certificado ou medico.',
-      'O conteudo deste documento nao deve ser tomado como aconselhamento medico. Nao se destina a diagnosticar, tratar, curar ou prevenir qualquer problema de saude - nem a substituir o conselho de um profissional qualificado.',
-      'Se tiver duvidas ou precisar de suporte, entre em contato: uncomplicatedworkout@gmail.com',
+      'Uncomplicated Workout foi criado e é distribuído por Rafael Pagotto, que não é um profissional de saúde certificado ou médico.',
+      'O conteúdo deste documento não deve ser tomado como aconselhamento médico. Não se destina a diagnosticar, tratar, curar ou prevenir qualquer problema de saúde - nem a substituir o conselho de um profissional qualificado.',
+      'Se tiver dúvidas ou precisar de suporte, entre em contato: uncomplicatedworkout@gmail.com',
     ],
-    legalSentence: 'Ao usar este site ou o conteudo disponivel nele, voce confirma que leu e concorda com os termos, avisos e outros documentos legais contidos em',
+    legalSentence: 'Ao usar este site ou o conteúdo disponível nele, você confirma que leu e concorda com os termos, avisos e outros documentos legais contidos em',
     linkLabel: 'documentos legais',
     splits: {
+      placeholder: 'Selecione uma divisão',
       fullBody: 'Corpo Inteiro',
       upperLower: 'Superior / Inferior',
-      pullPushLegs: 'Puxar / Empurrar / Pernas',
-    },
-    plans: {
-      recommended: 'Recomendado (Plano Original)',
-      custom: 'Personalizado',
+      pullPushLegs: 'Costas / Peito / Pernas',
     },
     volume: {
-      high: 'Alto',
-      moderate: 'Moderado',
-      low: 'Baixo',
-    },
-    frequency: {
-      high: 'Alta',
-      moderate: 'Moderada',
-      low: 'Baixa',
+      high: 'Alto (Personalizado)',
+      moderate: 'Moderado (Recomendado)',
+      low: 'Baixo (Personalizado)',
     },
     dayNames: {
       monday: 'Segunda-feira',
-      tuesday: 'Terca-feira',
+      tuesday: 'Terça-feira',
       wednesday: 'Quarta-feira',
       thursday: 'Quinta-feira',
       friday: 'Sexta-feira',
-      saturday: 'Sabado',
+      saturday: 'Sábado',
       sunday: 'Domingo',
     },
     langToggle: 'EN',
@@ -129,56 +105,46 @@ const UI_TEXT = {
 const WORKOUTS = {
   fullBody: {
     recommendedDays: ['monday', 'wednesday', 'friday'],
-    frequencyDays: {
-      high: ['monday', 'wednesday', 'friday'],
-      moderate: ['monday', 'wednesday', 'friday'],
-      low: ['monday', 'friday'],
-    },
     days: {
       monday: [
         { name: { en: 'Barbell Squat', pt: 'Agachamento com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/glutes/barbell-squat' },
         { name: { en: 'Wide Grip Lat Pulldown', pt: 'Puxada na frente (pegada aberta)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-pulldown' },
         { name: { en: 'Flat Bench Press', pt: 'Supino Reto com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/chest/barbell-bench-press' },
         { name: { en: 'Overhead Press', pt: 'Desenvolvimento com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/dumbbells/male/shoulders/dumbbell-seated-overhead-press' },
-        { name: { en: 'Overhead Triceps Extension', pt: 'Extensao de Triceps acima da cabeca (com corda)' }, sets: 3, reps: 12, url: 'https://musclewiki.com/cables/male/triceps/cable-rope-overhead-tricep-extension' },
+        { name: { en: 'Overhead Triceps Extension', pt: 'Extensão de Tríceps acima da cabeça' }, sets: 3, reps: 12, url: 'https://musclewiki.com/cables/male/triceps/cable-rope-overhead-tricep-extension' },
       ],
       wednesday: [
         { name: { en: 'Romanian Deadlift', pt: 'Levantamento Romeno' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/lowerback/barbell-romanian-deadlift' },
-        { name: { en: 'Leg Extension', pt: 'Extensao de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
+        { name: { en: 'Leg Extension', pt: 'Extensão de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
         { name: { en: 'Incline Bench Press', pt: 'Supino Inclinado com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/anterior-deltoid/barbell-incline-bench-press' },
         { name: { en: 'Wide Grip Seated Row', pt: 'Remada Sentada (pegada larga)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-neutral-row' },
-        { name: { en: 'Biceps Curl', pt: 'Rosca Biceps' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/biceps/dumbbell-curl' },
+        { name: { en: 'Biceps Curl', pt: 'Rosca Bíceps' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/biceps/dumbbell-curl' },
       ],
       friday: [
         { name: { en: 'Deadlift', pt: 'Levantamento Terra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/traps-middle/barbell-deadlift' },
         { name: { en: 'Narrow Grip Lat Pulldown', pt: 'Puxada na frente (pegada fechada)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/biceps/neutral-pulldown/' },
         { name: { en: 'Flat Bench Press', pt: 'Supino Reto com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/chest/barbell-bench-press' },
-        { name: { en: 'Lateral Raises', pt: 'Elevacao Lateral' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/shoulders/dumbbell-lateral-raise' },
+        { name: { en: 'Lateral Raises', pt: 'Elevação Lateral' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/shoulders/dumbbell-lateral-raise' },
         { name: { en: 'Hamstring Curl', pt: 'Flexora de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/hamstrings/machine-hamstring-curl' },
       ],
     },
   },
   upperLower: {
     recommendedDays: ['monday', 'tuesday', 'thursday', 'friday'],
-    frequencyDays: {
-      high: ['monday', 'tuesday', 'thursday', 'friday'],
-      moderate: ['monday', 'tuesday', 'thursday', 'friday'],
-      low: ['monday', 'thursday'],
-    },
     days: {
       monday: [
         { name: { en: 'Incline Bench Press', pt: 'Supino Inclinado com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/anterior-deltoid/barbell-incline-bench-press' },
         { name: { en: 'Wide Grip Lat Pulldown', pt: 'Puxada na frente (pegada aberta)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-pulldown' },
         { name: { en: 'Flat Bench Press', pt: 'Supino Reto com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/chest/barbell-bench-press' },
-        { name: { en: 'Wide Grip Seated Row', pt: 'Remada Sentada (pegada larga)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-neutral-row' },
+        { name: { en: 'Wide Grip Seated Row', pt: 'Remada Sentada (pegada aberta)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-neutral-row' },
         { name: { en: 'Overhead Press', pt: 'Desenvolvimento com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/dumbbells/male/shoulders/dumbbell-seated-overhead-press' },
       ],
       tuesday: [
         { name: { en: 'Barbell Squat', pt: 'Agachamento com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/glutes/barbell-squat' },
-        { name: { en: 'Leg Extension', pt: 'Extensao de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
+        { name: { en: 'Leg Extension', pt: 'Extensão de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
         { name: { en: 'Romanian Deadlift', pt: 'Levantamento Romeno' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/lowerback/barbell-romanian-deadlift' },
         { name: { en: 'Hamstring Curl', pt: 'Flexora de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/hamstrings/machine-hamstring-curl' },
-        { name: { en: 'Standing Calf Raises', pt: 'Elevacao de Panturrilha em Pe' }, sets: 3, reps: 8, url: 'https://musclewiki.com/exercise/machine-standing-calf-raises' },
+        { name: { en: 'Standing Calf Raises', pt: 'Elevação de Panturrilha em Pé' }, sets: 3, reps: 8, url: 'https://musclewiki.com/exercise/machine-standing-calf-raises' },
       ],
       thursday: [
         { name: { en: 'Incline Bench Press', pt: 'Supino Inclinado com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/anterior-deltoid/barbell-incline-bench-press' },
@@ -189,58 +155,53 @@ const WORKOUTS = {
       ],
       friday: [
         { name: { en: 'Barbell Squat', pt: 'Agachamento com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/glutes/barbell-squat' },
-        { name: { en: 'Leg Extension', pt: 'Extensao de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
+        { name: { en: 'Leg Extension', pt: 'Extensão de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
         { name: { en: 'Romanian Deadlift', pt: 'Levantamento Romeno' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/lowerback/barbell-romanian-deadlift' },
         { name: { en: 'Hamstring Curl', pt: 'Flexora de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/hamstrings/machine-hamstring-curl' },
-        { name: { en: 'Standing Calf Raises', pt: 'Elevacao de Panturrilha em Pe' }, sets: 3, reps: 8, url: 'https://musclewiki.com/exercise/machine-standing-calf-raises' },
+        { name: { en: 'Standing Calf Raises', pt: 'Elevação de Panturrilha em Pé' }, sets: 3, reps: 8, url: 'https://musclewiki.com/exercise/machine-standing-calf-raises' },
       ],
     },
   },
   pullPushLegs: {
     recommendedDays: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'],
-    frequencyDays: {
-      high: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'],
-      moderate: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'],
-      low: ['monday', 'wednesday', 'friday'],
-    },
     days: {
       monday: [
         { name: { en: 'Deadlift', pt: 'Levantamento Terra' }, sets: 2, reps: 8, url: 'https://musclewiki.com/barbell/male/traps-middle/barbell-deadlift' },
         { name: { en: 'Wide Grip Lat Pulldown', pt: 'Puxada na frente (pegada aberta)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-pulldown' },
         { name: { en: 'Narrow Grip Seated Row', pt: 'Remada Sentada (pegada fechada)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-neutral-row' },
-        { name: { en: 'Biceps Curl', pt: 'Rosca Biceps' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/biceps/dumbbell-curl' },
+        { name: { en: 'Biceps Curl', pt: 'Rosca Bíceps' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/biceps/dumbbell-curl' },
       ],
       tuesday: [
         { name: { en: 'Incline Bench Press', pt: 'Supino Inclinado com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/anterior-deltoid/barbell-incline-bench-press' },
         { name: { en: 'Flat Bench Press', pt: 'Supino Reto com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/chest/barbell-bench-press' },
         { name: { en: 'Overhead Press', pt: 'Desenvolvimento com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/dumbbells/male/shoulders/dumbbell-seated-overhead-press' },
-        { name: { en: 'Overhead Triceps Extension', pt: 'Extensao de Triceps acima da cabeca (com corda)' }, sets: 3, reps: 12, url: 'https://musclewiki.com/cables/male/triceps/cable-rope-overhead-tricep-extension' },
+        { name: { en: 'Overhead Triceps Extension', pt: 'Extensão de Tríceps acima da cabeça' }, sets: 3, reps: 12, url: 'https://musclewiki.com/cables/male/triceps/cable-rope-overhead-tricep-extension' },
       ],
       wednesday: [
         { name: { en: 'Barbell Squat', pt: 'Agachamento com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/glutes/barbell-squat' },
-        { name: { en: 'Leg Extension', pt: 'Extensao de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
+        { name: { en: 'Leg Extension', pt: 'Extensão de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
         { name: { en: 'Romanian Deadlift', pt: 'Levantamento Romeno' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/lowerback/barbell-romanian-deadlift' },
         { name: { en: 'Hamstring Curl', pt: 'Flexora de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/hamstrings/machine-hamstring-curl' },
-        { name: { en: 'Standing Calf Raises', pt: 'Elevacao de Panturrilha em Pe' }, sets: 3, reps: 8, url: 'https://musclewiki.com/exercise/machine-standing-calf-raises' },
+        { name: { en: 'Standing Calf Raises', pt: 'Elevação de Panturrilha em Pé' }, sets: 3, reps: 8, url: 'https://musclewiki.com/exercise/machine-standing-calf-raises' },
       ],
       thursday: [
         { name: { en: 'Deadlift', pt: 'Levantamento Terra' }, sets: 2, reps: 8, url: 'https://musclewiki.com/barbell/male/traps-middle/barbell-deadlift' },
         { name: { en: 'Narrow Grip Lat Pulldown', pt: 'Puxada na frente (pegada fechada)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/biceps/neutral-pulldown/' },
-        { name: { en: 'Wide Grip Seated Row', pt: 'Remada Sentada (pegada larga)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-neutral-row' },
-        { name: { en: 'Biceps Curl', pt: 'Rosca Biceps' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/biceps/dumbbell-curl' },
+        { name: { en: 'Wide Grip Seated Row', pt: 'Remada Sentada (pegada aberta)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-neutral-row' },
+        { name: { en: 'Biceps Curl', pt: 'Rosca Bíceps' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/biceps/dumbbell-curl' },
       ],
       friday: [
         { name: { en: 'Incline Bench Press', pt: 'Supino Inclinado com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/anterior-deltoid/barbell-incline-bench-press' },
         { name: { en: 'Flat Bench Press', pt: 'Supino Reto com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/chest/barbell-bench-press' },
-        { name: { en: 'Lateral Raises', pt: 'Elevacao Lateral' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/shoulders/dumbbell-lateral-raise' },
-        { name: { en: 'Triceps Pushdown', pt: 'Puxada de Triceps na polia' }, sets: 3, reps: 12, url: 'https://musclewiki.com/cables/male/triceps/cable-rope-pushdown' },
+        { name: { en: 'Lateral Raises', pt: 'Elevação Lateral' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/shoulders/dumbbell-lateral-raise' },
+        { name: { en: 'Triceps Pushdown', pt: 'Puxada de Tríceps na polia' }, sets: 3, reps: 12, url: 'https://musclewiki.com/cables/male/triceps/cable-rope-pushdown' },
       ],
       saturday: [
         { name: { en: 'Barbell Squat', pt: 'Agachamento com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/glutes/barbell-squat' },
-        { name: { en: 'Leg Extension', pt: 'Extensao de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
+        { name: { en: 'Leg Extension', pt: 'Extensão de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
         { name: { en: 'Romanian Deadlift', pt: 'Levantamento Romeno' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/lowerback/barbell-romanian-deadlift' },
         { name: { en: 'Hamstring Curl', pt: 'Flexora de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/hamstrings/machine-hamstring-curl' },
-        { name: { en: 'Standing Calf Raises', pt: 'Elevacao de Panturrilha em Pe' }, sets: 3, reps: 8, url: 'https://musclewiki.com/exercise/machine-standing-calf-raises' },
+        { name: { en: 'Standing Calf Raises', pt: 'Elevação de Panturrilha em Pé' }, sets: 3, reps: 8, url: 'https://musclewiki.com/exercise/machine-standing-calf-raises' },
       ],
     },
   },
@@ -251,16 +212,12 @@ const elements = {
   title: document.getElementById('heroTitle'),
   intro: document.getElementById('heroIntro'),
   start: document.getElementById('startButton'),
-  resume: document.getElementById('resumeButton'),
+  clearPlan: document.getElementById('clearPlanButton'),
   cardTitle: document.getElementById('cardTitle'),
   cardList: document.getElementById('cardList'),
   customizeTitle: document.getElementById('customizeTitle'),
-  customizeIntro: document.getElementById('customizeIntro'),
   splitLabel: document.getElementById('splitLabel'),
-  planLabel: document.getElementById('planLabel'),
   volumeLabel: document.getElementById('volumeLabel'),
-  frequencyLabel: document.getElementById('frequencyLabel'),
-  apply: document.getElementById('applyButton'),
   helper: document.getElementById('helperText'),
   workoutTitle: document.getElementById('workoutTitle'),
   workoutMeta: document.getElementById('workoutMeta'),
@@ -272,15 +229,15 @@ const elements = {
 
 const selects = {
   split: document.getElementById('splitSelect'),
-  plan: document.getElementById('planSelect'),
   volume: document.getElementById('volumeSelect'),
-  frequency: document.getElementById('frequencySelect'),
 };
 
 const workoutArea = {
   wrapper: document.getElementById('workoutOutput'),
   days: document.getElementById('workoutDays'),
 };
+
+let hasChosenSplit = false;
 
 function getStoredLanguage() {
   return localStorage.getItem(STORAGE_KEYS.language) || 'en';
@@ -309,15 +266,11 @@ function applyLanguage(lang) {
   elements.title.textContent = copy.title;
   elements.intro.textContent = copy.intro;
   elements.start.textContent = copy.start;
-  elements.resume.textContent = copy.resume;
+  elements.clearPlan.textContent = copy.clearPlan;
   elements.cardTitle.textContent = copy.cardTitle;
   elements.customizeTitle.textContent = copy.customizeTitle;
-  elements.customizeIntro.textContent = copy.customizeIntro;
   elements.splitLabel.textContent = copy.splitLabel;
-  elements.planLabel.textContent = copy.planLabel;
   elements.volumeLabel.textContent = copy.volumeLabel;
-  elements.frequencyLabel.textContent = copy.frequencyLabel;
-  elements.apply.textContent = copy.apply;
   elements.helper.textContent = copy.helper;
   elements.workoutTitle.textContent = copy.workoutTitle;
   elements.workoutMeta.textContent = copy.workoutMeta;
@@ -344,20 +297,14 @@ function applyLanguage(lang) {
 
 function updateSelectOptions(lang) {
   const copy = UI_TEXT[lang];
-  selects.split.options[0].textContent = copy.splits.fullBody;
-  selects.split.options[1].textContent = copy.splits.upperLower;
-  selects.split.options[2].textContent = copy.splits.pullPushLegs;
-
-  selects.plan.options[0].textContent = copy.plans.recommended;
-  selects.plan.options[1].textContent = copy.plans.custom;
+  selects.split.options[0].textContent = copy.splits.placeholder;
+  selects.split.options[1].textContent = copy.splits.fullBody;
+  selects.split.options[2].textContent = copy.splits.upperLower;
+  selects.split.options[3].textContent = copy.splits.pullPushLegs;
 
   selects.volume.options[0].textContent = copy.volume.high;
   selects.volume.options[1].textContent = copy.volume.moderate;
   selects.volume.options[2].textContent = copy.volume.low;
-
-  selects.frequency.options[0].textContent = copy.frequency.high;
-  selects.frequency.options[1].textContent = copy.frequency.moderate;
-  selects.frequency.options[2].textContent = copy.frequency.low;
 }
 
 function adjustSets(sets, volume) {
@@ -366,23 +313,10 @@ function adjustSets(sets, volume) {
   return sets;
 }
 
-function getDaysForSelection(split, selection) {
-  const plan = WORKOUTS[split];
-  if (!plan) return [];
-
-  if (selection.plan === 'recommended') {
-    return plan.recommendedDays;
-  }
-
-  return plan.frequencyDays[selection.frequency] || plan.recommendedDays;
-}
-
 function buildSelection() {
   return {
     split: selects.split.value,
-    plan: selects.plan.value,
     volume: selects.volume.value,
-    frequency: selects.frequency.value,
   };
 }
 
@@ -390,8 +324,9 @@ function renderWorkout(selection, lang) {
   const plan = WORKOUTS[selection.split];
   if (!plan) return;
 
-  const days = getDaysForSelection(selection.split, selection);
+  const days = plan.recommendedDays;
   const dayNames = UI_TEXT[lang].dayNames;
+  const volume = selection.volume || 'moderate';
 
   workoutArea.days.innerHTML = '';
 
@@ -413,9 +348,7 @@ function renderWorkout(selection, lang) {
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
 
-      const sets = selection.plan === 'recommended'
-        ? exercise.sets
-        : adjustSets(exercise.sets, selection.volume);
+      const sets = adjustSets(exercise.sets, volume);
 
       link.textContent = `${exercise.name[lang]} - ${sets}x${exercise.reps}`;
       item.appendChild(link);
@@ -438,38 +371,31 @@ function renderWorkoutIfVisible(lang) {
   }
 }
 
-function togglePlanFields() {
-  const isRecommended = selects.plan.value === 'recommended';
-  selects.volume.disabled = isRecommended;
-  selects.frequency.disabled = isRecommended;
-}
-
 function applySelectionToForm(selection) {
   selects.split.value = selection.split;
-  selects.plan.value = selection.plan;
-  selects.volume.value = selection.volume;
-  selects.frequency.value = selection.frequency;
-  togglePlanFields();
+  selects.volume.value = selection.volume || 'moderate';
+  hasChosenSplit = Boolean(selection.split);
 }
 
 function handleApply() {
   const selection = buildSelection();
   const lang = getStoredLanguage();
 
+  if (!selection.split) return;
+
   saveSelection(selection);
   renderWorkout(selection, lang);
-  elements.resume.hidden = false;
-
-  workoutArea.wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  elements.clearPlan.hidden = false;
 }
 
-function handleResume() {
-  const selection = getStoredSelection();
-  if (!selection) return;
-
-  applySelectionToForm(selection);
-  renderWorkout(selection, getStoredLanguage());
-  workoutArea.wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+function clearSavedPlan() {
+  localStorage.removeItem(STORAGE_KEYS.selection);
+  elements.clearPlan.hidden = true;
+  workoutArea.days.innerHTML = '';
+  workoutArea.wrapper.classList.remove('active');
+  selects.split.value = selects.split.options[0].value;
+  selects.volume.value = 'moderate';
+  hasChosenSplit = false;
 }
 
 function init() {
@@ -478,19 +404,24 @@ function init() {
 
   const storedSelection = getStoredSelection();
   if (storedSelection) {
-    elements.resume.hidden = false;
+    elements.clearPlan.hidden = false;
+    applySelectionToForm(storedSelection);
+    renderWorkout(storedSelection, storedLang);
   }
 
   elements.start.addEventListener('click', () => {
     document.getElementById('customizer').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-  elements.resume.addEventListener('click', handleResume);
-  selects.plan.addEventListener('change', togglePlanFields);
-  document.getElementById('plannerForm').addEventListener('submit', (event) => {
-    event.preventDefault();
+  elements.clearPlan.addEventListener('click', clearSavedPlan);
+  selects.split.addEventListener('change', () => {
+    if (!hasChosenSplit) {
+      selects.volume.value = 'moderate';
+    }
+    hasChosenSplit = true;
     handleApply();
   });
+  selects.volume.addEventListener('change', handleApply);
 
   elements.langToggle.addEventListener('click', () => {
     const nextLang = getStoredLanguage() === 'en' ? 'pt' : 'en';
@@ -498,7 +429,6 @@ function init() {
     applyLanguage(nextLang);
   });
 
-  togglePlanFields();
 }
 
 init();

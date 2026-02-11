@@ -29,7 +29,7 @@
                 <p id="heroIntro"></p>
                 <div class="hero-actions">
                     <button class="button primary" id="startButton" type="button"></button>
-                    <button class="button ghost" id="resumeButton" type="button" hidden></button>
+                    <button class="button ghost" id="clearPlanButton" type="button" hidden></button>
                 </div>
             </div>
             <div class="hero-card">
@@ -40,22 +40,15 @@
 
         <section class="panel" id="customizer">
             <h2 id="customizeTitle"></h2>
-            <p id="customizeIntro"></p>
             <form id="plannerForm">
                 <div class="form-grid">
                     <div class="form-field">
                         <label for="splitSelect" id="splitLabel"></label>
                         <select id="splitSelect">
+                            <option value="" disabled selected></option>
                             <option value="fullBody"></option>
                             <option value="upperLower"></option>
                             <option value="pullPushLegs"></option>
-                        </select>
-                    </div>
-                    <div class="form-field">
-                        <label for="planSelect" id="planLabel"></label>
-                        <select id="planSelect">
-                            <option value="recommended"></option>
-                            <option value="custom"></option>
                         </select>
                     </div>
                     <div class="form-field">
@@ -66,26 +59,16 @@
                             <option value="low"></option>
                         </select>
                     </div>
-                    <div class="form-field">
-                        <label for="frequencySelect" id="frequencyLabel"></label>
-                        <select id="frequencySelect">
-                            <option value="high"></option>
-                            <option value="moderate" selected></option>
-                            <option value="low"></option>
-                        </select>
-                    </div>
                 </div>
                 <p class="helper" id="helperText"></p>
-                <button class="button primary" id="applyButton" type="submit"></button>
             </form>
-        </section>
-
-        <section class="panel workout" id="workoutOutput">
-            <div class="workout-header">
-                <h2 id="workoutTitle"></h2>
-                <p id="workoutMeta"></p>
-            </div>
-            <div class="workout-days" id="workoutDays"></div>
+            <section class="workout" id="workoutOutput">
+                <div class="workout-header">
+                    <h2 id="workoutTitle"></h2>
+                    <p id="workoutMeta"></p>
+                </div>
+                <div class="workout-days" id="workoutDays"></div>
+            </section>
         </section>
     </main>
 
