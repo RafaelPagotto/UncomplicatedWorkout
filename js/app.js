@@ -117,7 +117,7 @@ const WORKOUTS = {
         { name: { en: 'Romanian Deadlift', pt: 'Levantamento Romeno' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/lowerback/barbell-romanian-deadlift' },
         { name: { en: 'Leg Extension', pt: 'Extensão de Pernas' }, sets: 3, reps: 12, url: 'https://musclewiki.com/machine/male/quads/machine-leg-extension' },
         { name: { en: 'Incline Bench Press', pt: 'Supino Inclinado com Barra' }, sets: 3, reps: 8, url: 'https://musclewiki.com/barbell/male/anterior-deltoid/barbell-incline-bench-press' },
-        { name: { en: 'Wide Grip Seated Row', pt: 'Remada Sentada (pegada larga)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-neutral-row' },
+        { name: { en: 'Wide Grip Seated Row', pt: 'Remada Sentada (pegada aberta)' }, sets: 3, reps: 8, url: 'https://musclewiki.com/machine/male/lats/machine-neutral-row' },
         { name: { en: 'Biceps Curl', pt: 'Rosca Bíceps' }, sets: 3, reps: 12, url: 'https://musclewiki.com/dumbbells/male/biceps/dumbbell-curl' },
       ],
       friday: [
